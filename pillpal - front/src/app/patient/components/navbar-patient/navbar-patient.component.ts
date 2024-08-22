@@ -1,0 +1,17 @@
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth-service.service';
+
+@Component({
+  selector: 'app-navbar-patient',
+  templateUrl: './navbar-patient.component.html',
+  styleUrls: ['./navbar-patient.component.css']
+})
+export class NavbarPatientComponent {
+  constructor(private authService: AuthService, private router: Router) {}
+
+  logout(): void {
+    this.authService.logout();
+    this.router.navigate(['/home/signin']); // Rediriger vers la page de connexion ou d'accueil
+  }
+}

@@ -1,0 +1,52 @@
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+
+<div class=" m-0">
+<div class="row1">
+    <div class="col s6">
+      <h1 class="text-center m-5" >Find Doctors</h1>
+    </div>
+
+</div>
+
+
+<div class="row m-0">
+    <div class="col-lg-2 col-md-6 col-sm-9 p-5 h-10" *ngFor="let doctor of doctors">
+        <div class="  card  rounded-5 ">
+            <div class="card-content ms-5 ">
+                <p class="card-title " hidden>
+                    {{doctor.id }}
+                 
+                </p>
+                <p class="card-title">
+                  Name: {{doctor.name}}
+                 
+                </p>
+                <p class="card-title">
+                 
+                    Email: {{doctor.email}}
+
+                </p>
+                <p class="card-title">
+                 Phone: {{doctor.phone}}
+                </p>
+                <p class="card-title">
+                    Speciality: {{doctor.speciality}}
+                </p>
+            </div>
+            <div class="card-action align-items-center">
+                <a class="btn btn-light  " [routerLink]="['/home/patient/doctor-details',doctor.id]"  (click)="viewDoctor( doctor.id )">View details</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+</div>
+
+</div>

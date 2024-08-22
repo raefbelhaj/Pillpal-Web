@@ -1,0 +1,22 @@
+<!-- rendezvous-form.component.html -->
+<h2>Prise de Rendez-vous</h2>
+
+<form (submit)="submitForm()">
+  <label for="patientName">Nom du patient:</label>
+  <input type="text" id="patientName" name="patientName" [(ngModel)]="appointment.patientName" required>
+
+  <label for="doctor">Médecin:</label>
+  <select id="doctor" name="doctor" [(ngModel)]="appointment.doctor" required>
+    <option value="dr_smith">Dr. Smith</option>
+    <option value="dr_jones">Dr. Jones</option>
+    <!-- Ajoutez d'autres médecins au besoin -->
+  </select>
+
+  <label for="appointmentDate">Date du rendez-vous:</label>
+  <input type="date" id="appointmentDate" name="appointmentDate" [(ngModel)]="appointment.appointmentDate" required>
+
+  <label for="appointmentTime">Heure du rendez-vous:</label>
+  <input type="time" id="appointmentTime" name="appointmentTime" [(ngModel)]="appointment.appointmentTime" required>
+
+  <button type="submit">Demander un rendez-vous</button>
+</form>

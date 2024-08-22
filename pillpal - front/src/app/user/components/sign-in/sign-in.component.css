@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9; /* Light grey background */
+}
+
+/* Sign-In Container */
+.sign-in-container {
+  background: url('https://wallpapercave.com/wp/wp2469685.jpg') center/cover no-repeat fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Sign-In Form */
+.sign-in-form {
+  background-color: #ffffff; /* White background for the form */
+  padding: 40px;
+  border-radius: 8px; /* Slightly rounded corners */
+  width: 100%;
+  max-width: 400px; /* Max width for form */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  text-align: center;
+  animation: fadeInUp 0.8s ease; /* Animation for form */
+}
+
+/* Header Title */
+.header-title {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left; /* Align labels to the left */
+}
+
+/* Form Labels */
+label {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Form Inputs */
+input.form-control {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input.form-control:focus {
+  border-color: #4caf50;
+}
+
+/* Radio Button Group */
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+}
+
+.radio-group input {
+  margin-right: 10px;
+}
+
+/* Submit Button */
+button {
+  background-color: #007bff; /* Primary blue color */
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Full width button */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Form Footer Links */
+.form-footer {
+  margin-top: 20px;
+}
+
+.form-footer a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.form-footer a:hover {
+  color: #0056b3;
+}
+
+.form-footer p {
+  margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .sign-in-form {
+    padding: 20px;
+  }
+}

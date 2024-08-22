@@ -1,0 +1,92 @@
+/* Styles for the header section */
+.header_section .header_bottom .container-fluid {
+    background-color: #343a40; /* Neutral dark background color for the header */
+    padding: 10px 0; /* Padding for spacing */
+}
+
+/* Style for the navbar logo */
+.navbar-brand img {
+    border-radius: 50%; /* Circular logo */
+    width: 50px; /* Logo width */
+    height: 50px; /* Logo height */
+}
+
+/* Style for the navbar */
+.navbar {
+    font-size: 14px; /* Professional font size */
+    padding: 0 30px; /* Adjust padding for spacing */
+    background-color: #212529; /* Dark background for navbar */
+    border-bottom: 1px solid #495057; /* Subtle border at the bottom */
+}
+
+/* Styles for navbar links */
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff; /* White text color */
+    padding: 10px 15px; /* Padding around the links */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: 600; /* Semi-bold font weight */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #495057; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Styles for login and signup buttons */
+.ml-auto.d-flex.align-items-center {
+    margin-left: auto; /* Align buttons to the right */
+}
+
+.btn-link {
+    color: #ffffff; /* White text color */
+    background-color: transparent; /* Transparent background */
+    padding: 8px 15px; /* Padding around the button */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Space between buttons */
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Semi-bold font weight */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.btn-link:hover {
+    background-color: #495057; /* Background color on hover */
+}
+
+/* Style for the search button */
+.nav_search-btn {
+    color: #ffffff; /* White text color */
+    background-color: #007bff; /* Primary blue color */
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.nav_search-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center; /* Center-align nav links on small screens */
+    }
+
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.2); /* Subtle border color for toggler */
+    }
+
+    .navbar-toggler span {
+        background-color: #ffffff; /* White color for toggler lines */
+    }
+
+    .quote_btn-container {
+        margin-top: 10px; /* Margin for spacing */
+        text-align: center; /* Center-align buttons on small screens */
+    }
+}

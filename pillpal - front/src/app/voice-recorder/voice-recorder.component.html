@@ -1,0 +1,23 @@
+<div>
+    <h1>raef </h1>
+    <h2>raef</h2>
+    <p>recorder</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    <button (click)="startRecording()">Commencer l'enregistrement</button>
+    <button (click)="stopRecording()">Arrêter l'enregistrement</button>
+    <audio *ngIf="audioUrl" [src]="audioUrl" controls></audio>
+  </div>
+  

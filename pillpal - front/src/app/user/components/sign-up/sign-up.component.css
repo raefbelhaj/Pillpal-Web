@@ -1,0 +1,98 @@
+/* Styles pour le conteneur d'inscription */
+.sign-up-container {
+  background: url('https://wallpapercave.com/wp/wp2469685.jpg') center/cover no-repeat fixed;
+  height: 100vh; /* Hauteur de la vue complète */
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: center; /* Centrer horizontalement */
+  margin: 0;
+  padding: 20px; /* Ajouter du padding pour éviter que le formulaire touche les bords */
+}
+
+/* Styles pour le formulaire d'inscription */
+.sign-up-form {
+  background-color: rgba(255, 255, 255, 0.9); /* Fond blanc légèrement transparent */
+  padding: 40px;
+  border-radius: 12px; /* Coins arrondis */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre subtile pour la profondeur */
+  max-width: 450px; /* Largeur maximale pour le formulaire */
+  width: 100%; /* Pleine largeur dans la largeur maximale */
+  box-sizing: border-box; /* Inclure le padding dans la largeur */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrer les éléments horizontalement */
+}
+
+/* Styles pour le titre du formulaire */
+.header-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #333; /* Couleur de texte sombre pour le contraste */
+}
+
+/* Styles pour les groupes de formulaire */
+.form-group {
+  width: 100%;
+  margin-bottom: 25px; /* Espace entre les éléments du formulaire */
+}
+
+/* Styles pour les labels de formulaire */
+.form-group label {
+  font-weight: 500; /* Légèrement gras pour les labels */
+  display: block;
+  margin-bottom: 10px; /* Espace sous le label */
+  color: #444; /* Couleur gris foncé */
+  font-size: 16px; /* Taille de police lisible */
+}
+
+/* Styles pour les champs de formulaire */
+input, select {
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box; /* Inclure le padding dans la largeur */
+  border: 1px solid #ddd; /* Bordure légère pour les champs */
+  border-radius: 8px; /* Coins arrondis */
+  font-size: 16px; /* Taille de police lisible */
+  outline: none; /* Retirer le contour par défaut */
+  transition: border-color 0.3s ease; /* Transition fluide pour la bordure */
+}
+
+/* Styles pour les champs de formulaire au survol */
+input:focus, select:focus {
+  border-color: #007bff; /* Bordure bleue au survol */
+}
+
+/* Styles pour les messages d'erreur */
+.text-danger {
+  color: #dc3545; /* Couleur rouge pour les erreurs */
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Styles pour le bouton de soumission */
+button {
+  background-color: #007bff; /* Couleur bleue primaire */
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600; /* Poids de police semi-gras */
+  transition: background-color 0.3s ease; /* Transition fluide pour la couleur de fond */
+  width: 100%; /* Pleine largeur */
+}
+
+button:hover {
+  background-color: #0056b3; /* Bleu plus foncé au survol */
+}
+
+/* Styles réactifs pour les petits écrans */
+@media (max-width: 768px) {
+  .sign-up-form {
+    padding: 20px;
+    max-width: 90%; /* Largeur maximale ajustée pour les petits écrans */
+  }
+}
